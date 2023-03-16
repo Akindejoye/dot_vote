@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-bisque);
+}
+
+.header__text {
+  color: var(--clr-dark);
+  text-transform: uppercase;
+}
+
+@media (max-width: 361px) {
+  .header__text {
+    font-size: 18px;
+  }
+}

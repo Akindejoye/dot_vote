@@ -1,0 +1,25 @@
+.ballot {
+  padding-bottom: 50px;
+  background-color: var(--clr-white);
+}
+
+.ballot-btnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.ballot-btn {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--clr-green-light);
+  background-color: var(--btn-green-dark);
+}
+
+.ballot-btn:hover {
+  color: var(--clr-white)
+}

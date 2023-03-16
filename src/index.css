@@ -1,0 +1,25 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { font-size: 100%;}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --clr-white: #ffffff;
+  --clr-bluish-1: #bac8d3;
+  --clr-dark: #121212;
+  --clr-bluish-2: #dae8fc;
+  --clr-green-light: #d5e8d4;
+  --clr-greyish: #f5f5f5;
+  --clr-bisque: bisque;
+  --btn-greyish-dark: #b3b3b3;
+  --btn-green-dark: #97d077;
+}

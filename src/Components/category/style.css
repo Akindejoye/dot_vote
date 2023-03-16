@@ -1,0 +1,31 @@
+.category {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.category__header {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--clr-dark);
+  background-color: var(--clr-bluish-1);
+  border: 1px solid var(--clr-dark);
+}
+
+.category__card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 452px) {
+  .category__card-box {
+    justify-content: center;
+  }
+}
+
