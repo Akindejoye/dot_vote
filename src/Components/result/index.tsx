@@ -1,7 +1,7 @@
-import  { useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { handleUniqueSet } from '../../utility/uniqueEntries';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -21,11 +21,10 @@ const style = {
     selectedVotes: string[]
   }) => {
 
-  const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const uniqueVotes = new Set(selectedVotes);
-  const getUniqueVotes = [...uniqueVotes]
+  //Removing double entries in the array
+  const uniqueVotes = handleUniqueSet(selectedVotes);
 
   return (
     <div>
@@ -49,7 +48,7 @@ const style = {
             Voted Names:
           </Typography>
           <ul>
-            {getUniqueVotes?.map((votes, index) => (
+            {uniqueVotes?.map((votes, index) => (
               <li key={index}>{votes}</li>
             ))}
           </ul>
