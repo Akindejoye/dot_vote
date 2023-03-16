@@ -30,9 +30,13 @@ const Ballot: React.FC = () => {
     setCategoriesId(categoryIds);
   }, [ballotData])
 
+  //Vote submission with Modal pop up
   const handleShowVote = () => {
     setOpen(true);
   }
+
+  //Ensuring a complete selection before submiting the vote.
+  const disableVote = categoriesId?.length === 0;
 
   return (
     <div className='ballot'>
@@ -48,7 +52,11 @@ const Ballot: React.FC = () => {
         />
       ))}
       <div className="ballot-btnBox">
-        <button className="ballot-btn" onClick={handleShowVote}>
+        <button 
+        className="ballot-btn" 
+        onClick={handleShowVote}
+        disabled={!disableVote}
+      >
           Submit Vote
         </button>
       </div>

@@ -21,5 +21,10 @@
 }
 
 .ballot-btn:hover {
-  color: var(--clr-white)
+  color: var(--clr-white);
+}
+
+.ballot-btn:disabled {
+  background-color: var(--clr-disabled);
+  cursor: not-allowed;
 }

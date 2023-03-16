@@ -57,6 +57,6 @@
 }
 
 .card-btn:disabled {
-  background-color: #cccccc;
+  background-color: var(--clr-disabled);
   cursor: not-allowed;
 }
