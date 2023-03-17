@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { axios } from '../../request';
-import { DataBallot, BallotContent, BallotDetails } from './../../../interfaces';
+import { DataBallot, BallotContent } from './../../../interfaces';
 import Category from '../category';
 import BasicModal from '../result';
 import './style.css';
